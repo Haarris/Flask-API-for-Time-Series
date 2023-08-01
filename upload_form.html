@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upload CSV</title>
+  </head>
+  <body>
+    <h1>Upload a CSV file</h1>
+    <form action="/forecast" method="post" enctype="multipart/form-data">
+      <label for="csv_file">Select a CSV file:</label>
+      <input type="file" name="file" id="csv_file" required><br><br>
+      <label for="forecast_days">Enter number of forecast days:</label>
+      <input type="number" name="forecast_days" id="forecast_days" min="1" max="365" value="7" required><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
